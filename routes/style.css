@@ -5,8 +5,7 @@
 
 .about-me {
   flex-direction: column;
-  gap: 20px;
-  background-color: #161616;
+  gap: 15px;
   padding: 10px;
   border-radius: 15px;
 }
