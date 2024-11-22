@@ -1,0 +1,18 @@
+#profile-icon {
+  width: 200px;
+  border-radius: 7rem;
+}
+
+.about-me {
+  flex-direction: column;
+  gap: 20px;
+  background-color: #161616;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.about-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
