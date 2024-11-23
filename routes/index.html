@@ -8,29 +8,40 @@
     <meta name="theme-color" content="#09f" />
     <link rel="stylesheet" href="/utils/globalstyles.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          window.scrollTo(0, 0);
+        }, 15);
+      };
+    </script>
   </head>
   <body class="page-container">
-    <div class="content-wrap">
+    <div class="content-card">
       <div class="container header-container">
         <img
           alt="Dot Dager🥒"
           id="profile-icon"
           src="https://yt3.googleusercontent.com/KPVok_m-JqxKG5wD7HaXc5RyYDPPHHZpQP4KquV8fD9er0mGEkZ_9UuQojBehXz6aCxUt0RI=s160-c-k-c0x00ffffff-no-rj"
         />
-        <h1 class="font-semibold" style="font-size: 3rem">
-          Hi 👋! I'm Dot Dager
-        </h1>
-        <h2 class="font-semibold" style="font-size: 2rem">
-          A player of the instrument
+        <h1 class="title" style="font-size: 3rem">Hola👋! Soy Dot Dager</h1>
+        <h2 class="title" style="font-size: 2rem">
+          Un tocador del instrumento profesional 🎸
         </h2>
       </div>
       <main>
         <div class="about-me section-box container">
-          <span class="about-title">
+          <span class="about-title title">
             <img alt="about me" src="assets/Pepe_Studying.png" />
-            <h2 class="font-semibold">About Me</h2>
+            <h2 class="font-semibold">Sobre Mi</h2>
           </span>
-          <p style="letter-spacing: 0.8px; opacity: 0.9">
+          <p style="letter-spacing: 0.8px">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
             distinctio quia temporibus praesentium dolore repellat unde esse
             voluptas voluptatem odio, reprehenderit est et consequuntur?
@@ -46,6 +57,36 @@
             quaerat.
           </p>
         </div>
+        <section>
+          <h2 class="title center" style="margin-top: 30px; font-size: 2rem">
+            Tecnologías
+          </h2>
+          <article>
+            <h3 style="margin-bottom: 10px">Lenguajes</h3>
+            <ul style="display: flex; gap: 20px">
+              <li class="tec-item">
+                <img
+                  src="assets/icons/javascript.svg"
+                  alt="Javascript"
+                  width="50"
+                  height="50"
+                  loading="lazy"
+                />
+                <span>Javascript</span>
+              </li>
+              <li class="tec-item">
+                <img
+                  src="assets/icons/typescript.svg"
+                  alt="Typescript"
+                  width="50"
+                  height="50"
+                  loading="lazy"
+                />
+                <span>Typescript</span>
+              </li>
+            </ul>
+          </article>
+        </section>
       </main>
     </div>
     <footer></footer>

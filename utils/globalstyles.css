@@ -7,21 +7,22 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: #ddd;
+  color: rgb(195, 195, 195);
+  list-style: none;
 }
 
 .page-container {
   background-color: black;
   background-image: url(/routes/assets/bg-dark.png);
-  overflow: hidden;
   background-repeat: repeat;
   background-size: 25%;
-  animation: moverFondo 60s infinite linear;
+  animation: moverFondo 100s infinite linear;
   min-height: 100vh;
   margin: 15px 15px 0px 15px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  box-sizing: border-box;
 }
 
 @keyframes moverFondo {
@@ -39,17 +40,35 @@
   max-width: 1000px;
 }
 
-.content-wrap {
-  margin: 80px auto;
+.content-card {
+  margin: 30px auto;
   flex: 1;
   background-color: rgba(100, 100, 100, 0.3);
   box-shadow: 0px 0px 40px 3px rgba(72, 87, 106, 0.5);
   padding: 20px;
   border-radius: 20px;
+  animation: fadeInUp 0.7s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.title {
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 600;
+  color: #ddd;
 }
 
 .header-container {
@@ -59,6 +78,13 @@
   align-items: center;
   margin: 30px auto 50px auto;
   padding-bottom: 10px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
 }
 
 @media (max-width: 600px) {

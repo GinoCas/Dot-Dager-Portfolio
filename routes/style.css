@@ -15,3 +15,18 @@
   align-items: center;
   gap: 15px;
 }
+
+.tec-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  border: 1px solid #303030;
+  border-radius: 10px;
+}
+
+.tec-item:hover {
+  background-color: #5850ec33;
+}
