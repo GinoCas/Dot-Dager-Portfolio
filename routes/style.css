@@ -45,11 +45,40 @@
   font-size: 2rem;
 }
 
+#working-on {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  max-width: 800px;
+  border: 1px solid #808080;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto;
+}
+
+#working-on span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+#working-on h2 a {
+  display: flex;
+}
+
+#working-on h2 a:hover {
+  opacity: 0.8;
+}
+
 #about-me {
   flex-direction: column;
   gap: 15px;
   padding: 10px;
   border-radius: 15px;
+  margin-top: 20px;
 }
 
 .about-title {
@@ -82,6 +111,13 @@
 
 .tec-item:hover {
   background-color: #5850ec33;
+}
+
+hr {
+  height: 15px;
+  margin-top: 20px;
+  border: none;
+  border-top: dashed 5px #808080;
 }
 
 @media (max-width: 1100px) {
