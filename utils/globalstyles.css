@@ -103,4 +103,7 @@
   .container {
     width: 300px;
   }
+  #working-on-project {
+    width: 200px;
+  }
 }
