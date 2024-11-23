@@ -20,11 +20,11 @@
     <header class="page-header container">
       <nav>
         <div style="display: flex; gap: 3rem; margin-left: 10px">
+          <a href="#working-on" class="font-semibold section-item">Trabajo</a>
           <a href="#about-me" class="font-semibold section-item">Sobre Mi</a>
           <a href="#tecnologies" class="font-semibold section-item"
             >Tecnologías</a
           >
-          <a href="#working-on" class="font-semibold section-item">Trabajo</a>
         </div>
         <div style="display: flex; gap: 1rem">
           <a
@@ -153,6 +153,10 @@
         </div>
       </nav>
     </header>
+    <div id="lumberjack-container">
+      <iframe src="https://tbot.xyz/lumber/" title="Lumberjack"></iframe>
+      <button id="close-game">Cerrar</button>
+    </div>
     <div class="content-card">
       <div class="container header-container">
         <img
@@ -160,13 +164,18 @@
           id="profile-icon"
           src="assets/profile-picture.png"
         />
-        <h1 class="title" style="font-size: 3rem">Hola👋! Soy Dot Dager</h1>
+        <h1 class="title" style="font-size: 3rem">Hola👋! Soy
+          <div class="author-name">
+            <a href="https://www.youtube.com/@DotDager" target="_blank">
+              Dot Dager
+            </a>
+          </div></h1>
         <h2 class="title">Un tocador del instrumento profesional 🎸</h2>
       </div>
       <main>
         <div id="working-on">
           <span class="title">
-            <img alt="about me" src="assets/cucumber.png" width="50px" />
+            <img alt="keti" src="assets/cucumber.png" width="50px" />
             <h2 class="font-semibold">Actualmente trabajando en</h2>
           </span>
           <img
@@ -211,7 +220,7 @@
             <img alt="about me" src="assets/Pepe_Studying.png" />
             <h2 class="font-semibold">Sobre Mi</h2>
           </span>
-          <p style="text-wrap: pretty">
+          <p style="text-wrap: pretty" class="text-color-2">
             Mi nombre es
             <span class="font-semibold" style="color: #ff6347">Mariano</span>,
             también conocido como
@@ -246,7 +255,7 @@
         <section>
           <h2 id="tecnologies" class="title center">Tecnologías</h2>
           <article style="margin-bottom: 10px">
-            <h3 style="margin-bottom: 10px">Lenguajes</h3>
+            <h3 style="margin-bottom: 10px" class="text-color-2">Lenguajes</h3>
             <ul class="tec-ul">
               <li class="tec-item">
                 <img
@@ -288,8 +297,8 @@
                 />
                 <span>CSS</span>
               </li>
-              <li>
-                <a class="tec-item" href="https://tbot.xyz/lumber/">
+              <li class="tec-item">
+                <button id="show-game">
                   <img
                     src="assets/icons/html5.svg"
                     alt="C#"
@@ -298,12 +307,12 @@
                     loading="lazy"
                   />
                   <span>HTML</span>
-                </a>
+                </button>
               </li>
             </ul>
           </article>
           <article style="margin-bottom: 10px">
-            <h3 style="margin-bottom: 10px">Bases de datos</h3>
+            <h3 style="margin-bottom: 10px" class="text-color-2">Bases de datos</h3>
             <ul class="tec-ul">
               <li class="tec-item">
                 <img
@@ -338,7 +347,7 @@
             </ul>
           </article>
           <article style="margin-bottom: 10px">
-            <h3 style="margin-bottom: 10px">Hosting</h3>
+            <h3 style="margin-bottom: 10px" class="text-color-2">Hosting</h3>
             <ul class="tec-ul">
               <li class="tec-item">
                 <img

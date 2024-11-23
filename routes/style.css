@@ -19,6 +19,46 @@
   align-items: center;
 }
 
+#lumberjack-container iframe {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#lumberjack-container button {
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  width: 80px;
+  height: 50px;
+  border: 0;
+  color: #ddd;
+  background-color: #ff4d4d;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#lumberjack-container {
+  display: none;
+}
+
+#lumberjack-container.show {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
 .section-item {
   padding: 5px;
   border-radius: 10px;
@@ -43,6 +83,23 @@
 
 .header-container h2 {
   font-size: 2rem;
+}
+
+.author-name {
+  display: inline-block;
+}
+
+.author-name:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all 0.8s;
+}
+.author-name:hover:after {
+  width: 100%;
+  background: #ddd;
 }
 
 #working-on {
@@ -102,11 +159,21 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 80px;
   padding: 20px;
   gap: 10px;
   border: 1px solid #303030;
   border-radius: 10px;
-  width: 80px;
+}
+
+#show-game {
+  border: 0;
+  background-color: #00000000;
+  cursor: pointer;
+}
+
+.tec-item span {
+  color: rgb(190, 190, 190);
 }
 
 .tec-item:hover {
